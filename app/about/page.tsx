@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <main>
-      <h1 className="text-xl">About Us</h1>
+      <h1 className="text-xl">About Us - With CI/CD</h1>
       <p className="text-sm">
-        NextSpace is a community of developers and designers who are passionate
-        about learning and sharing knowledge.
+        CI-CD With Github Actions is now enabled is a community of developers
+        and designers who are passionate about learning and sharing knowledge.
       </p>
     </main>
   );
