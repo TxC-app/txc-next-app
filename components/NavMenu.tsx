@@ -1,6 +1,6 @@
-"use client";
-import Link from "next/link";
-import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
+'use client';
+import Link from 'next/link';
+import { navigationMenuTriggerStyle } from '@/components/ui/navigation-menu';
 
 import {
   NavigationMenu,
@@ -11,28 +11,28 @@ import {
   NavigationMenuList,
   //   NavigationMenuTrigger,
   //   NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
+} from '@/components/ui/navigation-menu';
 
 export function NavMenu() {
   return (
-    <NavigationMenu className="hidden sm:flex">
+    <NavigationMenu className='hidden sm:flex'>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <Link href="/about" legacyBehavior passHref>
+          <Link href='/about' legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               About
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/products" legacyBehavior passHref>
+          <Link href='/products' legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Products
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/account" legacyBehavior passHref>
+          <Link href='/account' legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Account
             </NavigationMenuLink>
