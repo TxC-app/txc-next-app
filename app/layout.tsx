@@ -1,9 +1,10 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { ThemeProvider } from '@/components/theme-provider';
+import { ThemeProvider } from '@/providers/theme-provider';
 import { NavBar } from '@/components/NavBar';
 const inter = Inter({ subsets: ['latin'] });
+import AuthProvider from '@/providers/AuthProvider';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -24,10 +25,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className='min-h-screen'>
-            <NavBar />
-            {children}
-          </div>
+          <AuthProvider>
+            <div className='min-h-screen'>
+              <NavBar />
+              {children}
+            </div>
+          </AuthProvider>
         </ThemeProvider>
       </body>
     </html>
