@@ -33,6 +33,7 @@ jobs:
             pm2 kill
             pm2 startup
             cd /home/ubuntu/new-app/txc-next-app
+            npm install
             npm run build
             pm2 start npm --name "txc-next-app" -- start
             pm2 save
