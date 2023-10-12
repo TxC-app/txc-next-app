@@ -11,7 +11,7 @@ export default function About() {
   return (
     <main>
       <h1 className="text-xl">
-        Yoooo - Testing Again - Testing Again - About Us - With CI/CD
+        Hellooo! - Testing Again - Testing Again - About Us - With CI/CD
       </h1>
       <p className="text-sm">
         CI-CD With Github Actions is now enabled is a community of developers
